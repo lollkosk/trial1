@@ -1,0 +1,17 @@
+<div class="container">
+  <table class="table-full">
+    <thead>
+      <tr><th colspan="4">{{title}}</th></tr>
+      <tr><th>Full Name</th><th>Phone No.</th><th>Mobile No.</th><th>Actions</th></tr>
+    </thead>
+    <tbody>
+      {{#if contacts}}
+        {{#each contacts as |contact|}}
+          <tr><td>{{contact.firstName}} {{contact.lastName}}</td><td>{{contact.phone}}</td><td>{{contact.mobile}}</td><td><button {{action "deleteContact" contact}}>Delete</button></td></tr>
+        {{/each}}
+      {{else}}
+        <tr><td colspan="4">Your contacts list is empty. Add some contacts first.</td></tr>
+      {{/if}}
+    </tbody>
+  </table>
+</div>

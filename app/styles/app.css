@@ -1,0 +1,55 @@
+/**
+  Basic containers
+*/
+div.container-middle {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 900px;
+}
+
+div.container {
+  width: 100%;
+}
+
+/**
+  Tables
+*/
+table.table-full {
+  width: 100%;
+}
+
+table {
+  border-spacing: 0;
+  border: none;
+  text-align: left;
+}
+
+table thead {
+  font-weight: bold;
+  background: #bbb;
+}
+
+table th, table td {
+  padding: 3px;
+  margin: 0;
+}
+
+table thead th {
+  border-bottom: 1px solid #888;
+}
+
+table tbody td {
+  border: 1px solid #bbb;
+}
+
+table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/**
+  Inputs
+*/
+input {
+  margin-bottom: 0.25em;
+}

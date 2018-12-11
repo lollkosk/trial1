@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Add Contact Form</h2>
+
+  <div>
+    <label>First Name</label><br>
+    {{input name="firstName" type="text" value=model.firstName}}
+  </div>
+  <div>
+    <label>Last Name</label><br>
+    {{input name="lastName" type="text" value=model.lastName}}
+  </div>
+  <div>
+    <label>Phone Number</label><br>
+    {{input name="phone" type="text" value=model.phone}}
+  </div>
+  <div>
+    <label>Mobile Number</label><br>
+    {{input name="mobile" type="text" value=model.mobile}}
+  </div>
+
+  <div>
+    <button {{action "createContact"}} disabled={{saveDisabled}}>Add Contact</button>
+  </div>
+</div>

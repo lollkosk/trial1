@@ -1,0 +1,7 @@
+{{form-contact onCreateAction=(action "createContact")}}
+<hr>
+{{list-contacts
+  title="My Contacts"
+  contacts=model
+  onDeleteAction=(action "deleteContact")
+}}
